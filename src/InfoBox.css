@@ -1,0 +1,30 @@
+.InfoBox {
+    text-align: center;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.extraInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 30px 0 30px;
+    margin: 0;
+}
+
+.spacedDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 16px 0;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.spacedDetails:last-child {
+    border-bottom: none;
+}
