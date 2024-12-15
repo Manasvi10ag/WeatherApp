@@ -50,7 +50,11 @@ export default function InfoBox({ Info }) {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              {Info.city.charAt(0).toUpperCase() + Info.city.slice(1)}{" "}
+              {Info.city
+                .toLowerCase()
+                .split(' ')
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(' ')}{" "}
               {Info.humidity > 80 ? (
                 <ThunderstormRoundedIcon />
               ) : Info.temp > 25 ? (
